@@ -1,6 +1,5 @@
 # ChunQiu
 卒業作品
-
 コントロール：Keyboard＆GamePad
 
 Keyboard：  
