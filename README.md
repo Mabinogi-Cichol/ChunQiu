@@ -1,7 +1,8 @@
 # ChunQiu
-卒業作品
+卒業作品  
 
-コントロール：Keyboard＆GamePad
+![截图](https://github.com/Mabinogi-Cichol/ChunQiu/blob/master/README/Readme_image.png)  
+コントロール：Keyboard＆GamePad  
 
 Keyboard：  
 移動：WASD  
