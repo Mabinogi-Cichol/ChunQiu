@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp</name>
+    </assembly>
+    <members>
+        <member name="F:HutongGames.PlayMaker.Actions.ecosystem.cinemachine.ImpulseSourceGetProperties.directionMode">
+            <summary>How the signal direction behaves as the listener moves away from the origin.</summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Actions.ecosystem.cinemachine.ImpulseSourceSetProperties.directionMode">
+            <summary>How the signal direction behaves as the listener moves away from the origin.</summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Actions.AnimateFsmAction">
+            <summary>
+            Base action for AnimateXXX actions
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Actions.FsmStateActionAnimatorBase.IklayerIndex">
+            <summary>
+            The layerIndex index passed when processing action during OnAnimatorIK
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.FsmStateActionAnimatorBase.OnActionUpdate">
+            <summary>
+            Raises the action update event. Could be fired during onUpdate or OnAnimatorMove based on the action setup.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.ArrayForEach.Awake">
+            <summary>
+            Initialize FSM on awake so it doesn't cause hitches later
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Actions.ComponentAction`1.cachedGameObject">
+            <summary>
+            The cached GameObject. Call UpdateCache() first
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Actions.ComponentAction`1.cachedComponent">
+            <summary>
+            The cached component. Call UpdateCache() first
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.Assert.PlayMaker#ConditionalExpression#IEvaluatorContext#GetVariable(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Actions.MouseLook">
+            <summary>
+            Action version of Unity's builtin MouseLook behaviour.
+            TODO: Expose invert Y option.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Actions.MouseLook2">
+            <summary>
+            Action version of Unity's builtin MouseLook behaviour.
+            TODO: Expose invert Y option.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Actions.BaseFsmVariableAction">
+            <summary>
+            Base class for Get/Set FSM Variable actions
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Actions.BaseFsmVariableIndexAction">
+            <summary>
+            Base class for Get/Set FSM Variable actions
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.ForwardAllEvents.Event(HutongGames.PlayMaker.FsmEvent)">
+            <summary>
+            Return true to eat the event
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.ForwardEvent.Event(HutongGames.PlayMaker.FsmEvent)">
+            <summary>
+            Return true to eat the event
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.RunFSM.Awake">
+            <summary>
+            Initialize FSM on awake so it doesn't cause hitches later
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.RunFSM.OnEnter">
+            <summary>
+            Start the FSM on entering the state
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.RunFSMAction.Event(HutongGames.PlayMaker.FsmEvent)">
+            <summary>
+            Forward global events to the sub FSM
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.RunFSMAction.OnEnter">
+            <summary>
+            Start the FSM on entering the state
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.RunFSMAction.OnExit">
+            <summary>
+            Stop the FSM on exiting the state
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Actions.UiButtonArray.OnPreprocess">
+            <summary>
+            Try to do all GetComponent calls in Preprocess as part of build
+            But sometimes the values are not known at build time...
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.TransformEventsBridge">
+            <summary>
+            Transform events bridge. catches OnTransformParentChanged() and OnTransformChildrenChanged() and sends a PlayMaker event.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.ExpectComponent">
+            <summary>
+            Expect a component, use this for a public class to make sure it targets a gameobject that has this component, unlike RequireComponent, it doesn't add the component is missing,
+            Use this with the Owner class for example
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.ExpectComponent.GetTypeFromString(System.String)">
+            <summary>
+                Converts a string to a Type.
+            </summary>
+            <returns>The Type.</returns>
+            <param name="typeString">Type string.</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.ExpectComponent.GetTypeAsString(System.Type)">
+            <summary>
+                Converts a Type to a string.
+            </summary>
+            <returns>The string.</returns>
+            <param name="type">Type.</param>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.MainCameraTarget">
+            <summary>
+            Defines a Camera GameObject target. Can be the mainCamera, the owner of the component or a specific GameObject.
+            Use this class in your Components public interface, The Unity Inspector will use a specific PropertyDrawer is defined
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.Owner">
+            <summary>
+            Defines a GameObject target. Can be the owner of the component or a specific GameObject.
+            Use this class in your Components public interface, The Unity Inspector will use a specific PropertyDrawer is defined
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEvent">
+            <summary>
+            PlayMaker Event. Use this class in your Components public interface. The Unity Inspector will use the related PropertyDrawer.
+            It lets user easily choose a PlayMaker Event
+            
+            If there is no attribute "EventTargetVariable" define, the list of events will be all the PlayMaker global events
+            
+            If the attribute "EventTargetVariable" is defined, the PlayMakerEventTarget variable will be used for the context
+             the list of events will adapt, and warn the user if the selected event is indeed implemented on the target
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEvent.eventName">
+            <summary>
+            The name of the event.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEvent.allowLocalEvents">
+            <summary>
+            Store here a user setting, instead of in the PropertyDrawer
+            Switch between showing global or local events to keep it as choosen by the user.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEvent.defaultEventName">
+            <summary>
+            The default name of the event.
+            </summary>
+        </member>
+        <member name="P:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEvent.isNone">
+            <summary>
+            true is no event was selected.
+            </summary>
+            <value><c>true</c> if no event selected; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.ProxyEventTarget">
+            <summary>
+            Options to define an event target
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventTarget">
+            <summary>
+            PlayMaker Event Target. Use this class in your Components public interface. The Unity Inspector will use the related PropertyDrawer.
+            It lets user easily choose a PlayMaker Event Target: 
+            Options are: Owner, GameObject, BroadcastAll, or FsmComponent
+            For Owner and GameObject targets, the user can choose to include children, 
+            in which case, the PlayMaker event will be send to all childrens
+            
+            This class works on its own. However, it's meant to be used in conjunction with the PlayMakerEvent Class which will point to the variable of that class via the attribute "EventTargetVariable"
+            So the PlayMakerEvent will then be able to send a PlayMakerEvent to the target defined by this class.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventTarget.SetOwner(UnityEngine.GameObject)">
+            <summary>
+            Use this to force the owner of this Target, in odd situations ( timeline playable Assets), the owner is not known from the SerializedObject.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.ProxyFsmTarget">
+            <summary>
+            Options to define an fsm target
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmTarget">
+            <summary>
+            PlayMaker Fsm Target. Use this class in your Components public interface. The Unity Inspector will use the related PropertyDrawer.
+            It lets user easily choose a PlayMaker Fsm Component: 
+            Options are: Owner, GameObject, or FsmComponent
+            For Owner and GameObject targets, the fsm will pick the first one or the fsm named if defined.
+            This class works on its own.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariable">
+            <summary>
+            PlayMaker Fsm Variable. Use this class in your Components public interface. The Unity Inspector will use the related PropertyDrawer.
+            It lets user easily point to a PlayMaker FsmVariable
+            
+            If there is no attribute "FsmVariableTargetVariable" define, the list of events will be all the PlayMaker global events
+            
+            If the attribute "FsmEventTargetVariable" is defined, the PlayMakerFsmVariableTarget variable will be used for the context
+             the list of events will adapt, and warn the user if the selected event is indeed implemented on the target
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariable.variableSelectionChoice">
+            <summary>
+            The type of the variable. Choose any to let the user pick from any type
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariable.selectedType">
+            <summary>
+            The type of the selected. Defined after the user has picked a variable from the list
+            Sorry, I could not find another way to expose this to the propertyDrawer...
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariable.variableName">
+            <summary>
+            The name of the event.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariable.defaultVariableName">
+            <summary>
+            The default variable name.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.ProxyFsmVariableTarget">
+            <summary>
+            Options to define an fsm target
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariableTarget">
+            <summary>
+            PlayMaker Fsm Variable Target. Use this class in your Components public interface. The Unity Inspector will use the related PropertyDrawer.
+            It lets user easily choose where to look for a FsmVariable: 
+            Options are: Owner, GameObject, GlobalVariable or FsmComponent
+            This class works on its own.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.utils.VersionInfo.Clone">
+            <summary>
+            I haven't digged into this but if I assign a struct from a variable to another does that create a shallow copy or it remains the same in memory?
+            like myversion == someother version ? what happens there? 
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.utils.VersionInfo.ToString">
+            <summary>
+            VersionInfo string : x.x.x t x x
+            </summary>
+            <returns>The VersionInfo as string</returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.utils.VersionInfo.ToShortString">
+            <summary>
+             Short string: x.x.xtx x
+            </summary>
+            <returns>The short string.</returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.utils.VersionInfo.ToString(System.String)">
+            <summary>
+            Custom format if wanted. {0} is Major, {1} is Minor, {2} is Patch, {3} is short Type, {4} is long type, 5 is Build, 6 is appendix
+            </summary>
+            <returns>The string.</returns>
+            <param name="format">Format. default to "{0}.{1}.{2}{3}{5}"</param>
+        </member>
+        <member name="T:HutongGames.PlayMaker.ActionHelpers">
+            <summary>
+            Helper functions to make authoring Actions simpler.
+            </summary>
+        </member>
+        <member name="P:HutongGames.PlayMaker.ActionHelpers.WhiteTexture">
+            <summary>
+            Get a small white texture
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.BlendColor(HutongGames.PlayMaker.ColorBlendMode,UnityEngine.Color,UnityEngine.Color)">
+            <summary>
+            Common blend operations for colors
+            E.g. used by TweenColor action
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.IsVisible(UnityEngine.GameObject)">
+            <summary>
+            Check the visibility of the Renderer on a GameObject
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetOwnerDefault(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.FsmOwnerDefault)">
+            <summary>
+            Get the GameObject targeted by an action's FsmOwnerDefault variable
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetGameObjectFsm(UnityEngine.GameObject,System.String)">
+            <summary>
+            Get the first Playmaker FSM on a game object.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetRandomWeightedIndex(HutongGames.PlayMaker.FsmFloat[])">
+            <summary>
+            Given an array of weights, returns a randomly selected index. 
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AddAnimationClip(UnityEngine.GameObject,UnityEngine.AnimationClip)">
+            <summary>
+            Add an animation clip to a GameObject if it has an Animation component
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.HasAnimationFinished(UnityEngine.AnimationState,System.Single,System.Single)">
+            <summary>
+            Check if an animation has finished playing.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetTargetRotation(HutongGames.PlayMaker.AnimationEnums.RotationOptions,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3)">
+            <summary>
+            Returns a target rotation in world space given the specified parameters
+            Some parameters are interpreted differently based on RotationOptions selected.
+            E.g. used by TweenRotation
+            </summary>
+            <param name="option">Rotation options exposed to user</param>
+            <param name="owner">The transform being rotated</param>
+            <param name="target">A potential target transform</param>
+            <param name="rotation">A potential target rotation</param>
+            <returns></returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.CheckForValidEvent(HutongGames.PlayMaker.FsmState,System.String)">
+            <summary>
+            Check if a state responds to an event.
+            Not really needed since the ErrorChecker covers this.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.FormatUnityLogString(System.String)">
+            <summary>
+            Format a log string suitable for the Unity Log.
+            The Unity Log lacks some context, so we bake it into the log string.
+            </summary>
+            <param name="text">Text to log.</param>
+            <returns>String formatted for the Unity Log.</returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoName(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.INamedVariable[])">
+            <summary>
+            ActionName : field1 field2 ...
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoName(System.String,HutongGames.PlayMaker.INamedVariable[])">
+            <summary>
+            ActionName : field1 field2 ...
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameRange(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : min - max
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameRange(System.String,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : min - max
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameSetVar(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : var = value
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameSetVar(System.String,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : var = value
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameConvert(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            [-Convert]ActionName : fromVar to toVar
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameConvert(System.String,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            [-Convert]ActionName : fromVar to toVar
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameGetProperty(HutongGames.PlayMaker.FsmStateAction,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : property -> store
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.AutoNameGetProperty(System.String,HutongGames.PlayMaker.NamedVariable,HutongGames.PlayMaker.NamedVariable)">
+            <summary>
+            ActionName : property -> store
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetControlPreviewRect(System.Single)">
+            <summary>
+            Gets a rect that fits in the controls column of an inspector.
+            </summary>
+            <param name="height">Desired height.</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.PositionHandle(UnityEngine.Object,UnityEngine.GameObject,UnityEngine.Vector3)">
+            <summary>
+            Draws a Position Handle in the scene using a combination of GameObject and Position values.
+            If a GameObject is specified, the Position is a local offset.
+            If no GameObject is specified, the Position is a world position.
+            Many actions use this setup. 
+            </summary>
+            <param name="owner"></param>
+            <param name="go"></param>
+            <param name="position"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.DrawArrow(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)">
+            <summary>
+            Draws an arrow in the scene.
+            Useful for actions that set a direction.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetPreviewMesh(UnityEngine.GameObject)">
+            <summary>
+            Get a mesh that can be used by Gizmos.DrawMesh to preview the mesh while editing.
+            E.g. to preview a GameObject moving to a target
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.SingleColorScaleHandle(UnityEngine.GameObject,UnityEngine.Vector3,System.Single,UnityEngine.Color)">
+            <summary>
+            Single color version of Handles.ScaleHandle.
+            Useful when you have multiple editors (e.g. TweenScale)
+            Note, does not handle value of 0 very well (fix?)
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.GetLocalBounds(UnityEngine.GameObject)">
+            <summary>
+            Get a local bounding box for a GameObject
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.DrawWireBounds(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Color)">
+            <summary>
+            Draw wire bounding box for Transform.
+            Optionally scale bounding box.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.DrawWireBounds(UnityEngine.Transform,UnityEngine.Quaternion,UnityEngine.Color)">
+            <summary>
+            Draw wireframe bounding box around object with optional rotation (for editing gizmos)
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.DrawWireBounds(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3,UnityEngine.Color)">
+            <summary>
+            Draw wireframe bounding box around object with optional translate, rotate, and scale (for editing gizmos)
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.DrawWireCube(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)">
+            <summary>
+            Similar to Gizmos.DrawWireCube but can be used in editor code.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.ActionHelpers.RuntimeError(HutongGames.PlayMaker.FsmStateAction,System.String)">
+            <summary>
+            Actions should use this for consistent error messages.
+            Error will contain action name and full FSM path.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMaker.UpdateHelper">
+            <summary>
+            Playmaker runtime code can't call unity editor code
+            This class is a workaround, allowing runtime code to call EditorUtility.SetDirty
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.UpdateHelper.SetDirty(HutongGames.PlayMaker.Fsm)">
+            <summary>
+            Helper that can be called by reflection from runtime class without referencing UnityEditor
+            E.g. When Fsm is loaded it can need fixing and then needs to be marked dirty
+            </summary>
+        </member>
+        <member name="M:HutongGames.EaseEditor.DrawPreviewCurve(HutongGames.EasingFunction.Ease,System.Boolean@,System.Single@,UnityEngine.Color)">
+            <summary>
+            Draws scrubbing controls and a preview curve for EasingFunctions
+            </summary>
+            <param name="ease">The  Ease function to preview</param>
+            <param name="playPreview">Did the user hit Play in the scrubbing slider</param>
+            <param name="currentTime">Used to draw the current time on the preview</param>
+            <param name="currentTimeColor">Color used to draw current time</param>
+        </member>
+        <member name="M:HutongGames.EasingFunction.GetEasingFunction(HutongGames.EasingFunction.Ease)">
+            <summary>
+            Returns the function associated to the easingFunction enum. This value returned should be cached as it allocates memory
+            to return.
+            </summary>
+            <param name="easingFunction">The enum associated with the easing function.</param>
+            <returns>The easing function</returns>
+        </member>
+        <member name="M:HutongGames.EasingFunction.GetEasingFunctionDerivative(HutongGames.EasingFunction.Ease)">
+            <summary>
+            Gets the derivative function of the appropriate easing function. If you use an easing function for position then this
+            function can get you the speed at a given time (normalized).
+            </summary>
+            <param name="easingFunction"></param>
+            <returns>The derivative function</returns>
+        </member>
+        <member name="T:CinemachineActionHeader">
+            <summary>
+            Just a beautifier to add the cinemachine logo at the top of every cinemachine actions
+            </summary>
+        </member>
+        <member name="T:CinemachineBrainProxy">
+            <summary>
+            This Component listen to m_CameraActivatedEvent and m_CameraCutEvent CinemachineBrain unity events and broadcast PlayMaker Events
+            
+            CINEMACHINE / ON CAMERA ACTIVATED
+            Event data GameObject will reference the ICinemachineCamera.VirtualCameraGameObject
+            
+            CINEMACHINE / ON CAMERA CUT
+            Event data GameObject will reference the CinemachineBrain.gameObject
+            
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:CinemachineColliderExtensionProxy" -->
+        <member name="T:CinemachineCoreGetInputTouchAxis">
+             <summary>
+             This Component takes control of the CinemachineCore input source, and provides support for Input.Touch
+            
+             This is needed if you use for example "CineMachine Free Look" component and want Touch to control the Free Look behaviour.
+            
+             "Mouse X" and "Mouse Y" are implemented, if Touches are detected, they are used, else the regular Unity InputManager is used
+            
+             For Touch based input, you can control sensitivity, it refers to the number of pixels of a touch deltaPosition that would equate to 1 if it was a regular Input
+             So for a TouchSensitivity of 10, this means an Input value of 1 if the deltaPosition was 10 for that given frame
+            
+             For regular Mouse, there is an option to Require a click to active Input, so you click and drag to have Input values.
+             </summary>
+        </member>
+        <member name="T:PlayMakerUtilsDotNetExtensions">
+            <summary>
+            This static class defines some useful extension methods for several PlayMaker specific classes (e.g. VariableType).
+            </summary>
+        </member>
+        <member name="F:PlayMakerUtils.FsmEventSender">
+            <summary>
+            Self generated Fsm in case developer passes null as a source Fsm to fire an event.
+            </summary>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToQuaternion(System.Object,UnityEngine.Quaternion)">
+            <summary>
+            Converts to quaternion. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to quaternion.</returns>
+            <param name="value">Value.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToRect(System.Object,UnityEngine.Rect)">
+            <summary>
+            Converts to rect. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to rect.</returns>
+            <param name="value">Value.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToColor(System.Object,UnityEngine.Color)">
+            <summary>
+            Converts to color. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to color.</returns>
+            <param name="value">Value.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToVector3(System.Object,UnityEngine.Vector3)">
+            <summary>
+            Converts to vector3. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to vector3.</returns>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToVector2(System.Object,UnityEngine.Vector2)">
+            <summary>
+            Converts to vector2. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to vector2.</returns>
+        </member>
+        <member name="M:PlayMakerUtils.ConvertToVector2(System.Object,UnityEngine.Vector4)">
+            <summary>
+            Converts to vector2. if object is null or not of the right type, will return default value
+            </summary>
+            <returns>The to vector2.</returns>
+            <param name="value">Value.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:Spine.Unity.Examples.SpineBeginnerTwo.DoDemoRoutine">
+            This is an infinitely repeating Unity Coroutine. Read the Unity documentation on Coroutines to learn more.
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.SetFlip(System.Single)">
+            <summary>Sets the horizontal flip state of the skeleton based on a nonzero float. If negative, the skeleton is flipped. If positive, the skeleton is not flipped.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.PlayAnimationForState(System.String,System.Int32)">
+            <summary>Plays an animation based on the state name.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.PlayAnimationForState(System.Int32,System.Int32)">
+            <summary>Plays an animation based on the hash of the state name.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.GetAnimationForState(System.String)">
+            <summary>Gets a Spine Animation based on the state name.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.GetAnimationForState(System.Int32)">
+            <summary>Gets a Spine Animation based on the hash of the state name.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.PlayNewAnimation(Spine.Animation,System.Int32)">
+            <summary>Play an animation. If a transition animation is defined, the transition is played before the target animation being passed.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonAnimationHandleExample.PlayOneShot(Spine.Animation,System.Int32)">
+            <summary>Play a non-looping animation once then continue playing the state animation.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.AnimationMatchModifierAsset.AnimationTools.MatchAnimationTimelines(System.Collections.Generic.IEnumerable{Spine.Animation},Spine.SkeletonData)">
+            <summary>
+            Matches the animation timelines across the given set of animations.
+            This allows unkeyed properties to assume setup pose when animations are naively mixed using Animation.Apply.
+            </summary>
+            <param name="animations">An enumerable collection animations whose timelines will be matched.</param>
+            <param name="skeletonData">The SkeletonData where the animations belong.</param>
+        </member>
+        <member name="T:Spine.Unity.Examples.AtlasRegionAttacher">
+            <summary>
+            Example code for a component that replaces the default attachment of a slot with an image from a Spine atlas.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SpriteAttacher.Attach">
+            <summary>Update the slot's attachment to the Attachment generated from the sprite.</summary>
+        </member>
+        <member name="T:Spine.Unity.Examples.SetRigidbodySolverIterations">
+             <summary>
+             This component is intended to increase the physics solver iteration count
+             for Rigidbody Joint setups which would otherwise be too unstable.
+            
+             To use this example component, add it to a GameObject which is parent of
+             one or more Rigidbody instances. The physics setting "solver iteration count"
+             will be overwritten by the provided value.
+             </summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonGraphicMirror.StartMirroring">
+            <summary>Freeze the SkeletonGraphic on this GameObject, and use the source as the Skeleton to be rendered by the SkeletonGraphic.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonGraphicMirror.UpdateTexture(UnityEngine.Texture2D)">
+            <summary>Use a new texture for the SkeletonGraphic. Use this if your source skeleton uses a repacked atlas. </summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonGraphicMirror.RestoreIndependentSkeleton">
+            <summary>Stops mirroring the source SkeletonRenderer and allows the SkeletonGraphic to become an independent Skeleton component again.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll.Apply">
+            <summary>Instantiates the ragdoll simulation and applies its transforms to the skeleton.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll.SmoothMix(System.Single,System.Single)">
+            <summary>Transitions the mix value from the current value to a target value.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll.SetSkeletonPosition(UnityEngine.Vector3)">
+            <summary>Set the transform world position while preserving the ragdoll parts world position.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll.Remove">
+            <summary>Removes the ragdoll instance and effect from the animated skeleton.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.Apply">
+            <summary>Instantiates the ragdoll simulation and applies its transforms to the skeleton.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.SmoothMix(System.Single,System.Single)">
+            <summary>Transitions the mix value from the current value to a target value.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.SetSkeletonPosition(UnityEngine.Vector3)">
+            <summary>Set the transform world position while preserving the ragdoll parts world position.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.Remove">
+            <summary>Removes the ragdoll instance and effect from the animated skeleton.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.RecursivelyCreateBoneProxies(Spine.Bone)">
+            <summary>Generates the ragdoll simulation's Transform and joint setup.</summary>
+        </member>
+        <member name="M:Spine.Unity.Examples.SkeletonRagdoll2D.UpdateSpineSkeleton(Spine.Unity.ISkeletonAnimation)">
+            <summary>Performed every skeleton animation update to translate Unity Transforms positions into Spine bone transforms.</summary>
+        </member>
+        <member name="T:Spine.Unity.Examples.SlotTintBlackFollower">
+            <summary>
+            Add this component to a Spine GameObject to apply a specific slot's Colors as MaterialProperties.
+            This allows you to apply the two color tint to the whole skeleton and not require the overhead of an extra vertex stream on the mesh.
+            </summary>
+        </member>
+        <member name="F:Spine.Unity.Examples.SlotTintBlackFollower.slotName">
+            <summary>
+            Serialized name of the slot loaded at runtime. Change the slot field instead of this if you want to change the followed slot at runtime.</summary>
+        </member>
+        <member name="T:Spine.Unity.Prototyping.SkeletonColorInitialize">
+            <summary>
+            Stores and serializes initial settings for a Spine Skeleton component. The settings only get applied on Start at runtime.</summary>
+        </member>
+    </members>
+</doc>

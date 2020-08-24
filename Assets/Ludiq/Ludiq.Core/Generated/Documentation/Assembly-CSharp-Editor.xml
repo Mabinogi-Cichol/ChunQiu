@@ -1,0 +1,1310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembly-CSharp-Editor</name>
+    </assembly>
+    <members>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.RemoveFocus">
+            <summary>
+            Removes the UI focus from the current Control 
+            
+            https://forum.unity.com/threads/gui-text-field-remove-focus.41845/#post-786990
+            
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.GetImplementedGlobalEvents(PlayMakerFSM,System.Boolean)">
+            <summary>
+            Gets the implemented global events.
+            </summary>
+            <returns>The implemented global events.</returns>
+            <param name="fromFsm">The fsm to look for implemented global events.</param>
+            <param name="includeNone">If set to <c>true</c> include none. Useful for popup to select an event or not</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.GetGlobalEvents(System.Boolean)">
+            <summary>
+            Gets the global events list. 
+            </summary>
+            <returns>The global events.</returns>
+            <param name="includeNone">If set to <c>true</c> include a "none" option. Useful for popup to select an event or not</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.GetBaseProperty``1(UnityEditor.SerializedProperty)" -->
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.SetActionEditorVariableSelectionContext(System.Object,System.Reflection.FieldInfo)">
+            <summary>
+            set context for object and fieldinfo before using VariableEditor.FsmXXXField(), else dropdown will error out.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.SetActionEditorArrayVariableSelectionContext(System.Object,System.Int32,System.Reflection.FieldInfo)">
+            <summary>
+            set context for object and fieldinfo before using VariableEditor.FsmXXXField(), else dropdown will error out.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.EditorGUILayout_FsmVarPopup(System.String,HutongGames.PlayMaker.NamedVariable[],HutongGames.PlayMaker.FsmVar,System.Boolean@)">
+            <summary>
+            Display an _selectionIndex the fsm variable from a list of variables ( from an fsm likely).
+            This is to paliate for the PlayMaker 1.8 that deprecated the api call VariableEditor.FsmVarPopup()
+            </summary>
+            <returns>The fsm variable GU.</returns>
+            <param name="fieldLabel">Field label.</param>
+            <param name="fsmVariables">Fsm variables.</param>
+            <param name="selection">Selection.</param>
+            <param name="GuiChanged">GUI changed flag</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.GetVariablesStringList(HutongGames.PlayMaker.FsmVariables,System.Boolean,HutongGames.PlayMaker.VariableType)">
+            <summary>
+            Gets specific types variables list as strings from FsmVariables. 
+            Use this method to populate popup selection in inspectors.
+            </summary>
+            <returns>The list of variables of defined variableType as strings.</returns>
+            <param name="fsmVariables">the List of Variables to filter</param>
+            <param name="includeNone">If set to <c>true</c> include a "none" option. Useful for popup to select an event or not</param>
+            <param name="variableType">Optional, default to Unknown, else will filter by specific type</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerInspectorUtils.GetVariableTypeFromEnumIndex(System.Int32)">
+            <summary>
+            When using SerializedProperty, enums comes with an index, and I haven't yet figured out how to convert it back into the enum reliably
+            so I made this lut. 
+            Used in the PlayMakerFsmVariablePropertyDrawer.cs for example.
+            </summary>
+            <returns>The variable type from enum index.</returns>
+            <param name="index">Index.</param>
+        </member>
+        <member name="T:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerPropertyDrawerBaseClass">
+            <summary>
+            Playmaker property drawer base class. Extend this class for all PlayMaker related property drawer
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerPropertyDrawerBaseClass.ControlHeight">
+            <summary>
+            The default height of one property.
+            </summary>
+        </member>
+        <member name="P:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerPropertyDrawerBaseClass.ownerGameObject">
+            <summary>
+            The GameObject owner of the component being inspected. 
+            Keep it cached to avoid reflecting on every OnGUI
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerPropertyDrawerBaseClass.GetRectforRow(UnityEngine.Rect,System.Int32)">
+            <summary>
+            Compute the Rect for a one line property field at a given row index.
+            </summary>
+            <returns>The rect.</returns>
+            <param name="position">The Rect Position given by the PropertyDrawer itself</param>
+            <param name="row">The row index for that rect. Index starts at 0</param>
+        </member>
+        <member name="M:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerPropertyDrawerBaseClass.CacheOwnerGameObject(UnityEditor.SerializedObject)">
+            <summary>
+            Caches the owner GameObject. Call this if you want to reference automatically the owner
+            for example for an event target.
+            note: It's really odd, cause I can't get serializedObject.targetObject to work...
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.MainCameraTargetPropertyDrawer.attributeScanned">
+            <summary>
+            Flag to know that we have checked for the attributes
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.MainCameraTargetPropertyDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.OwnerDrawer.attributeScanned">
+            <summary>
+            Flag to know that we have checked for the attributes
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.OwnerDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventDrawer.attributeScanned">
+            <summary>
+            Flag to know that we have checked for the attributes
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventDrawer.eventTargetVariable">
+            <summary>
+            Use the attribute "EventTargetVariable" to point to that variable
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerEventTargetDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmTargetDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariableDrawer.attributeScanned">
+            <summary>
+            Flag to know that we have checked for the attributes
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariableDrawer.variableTargetVariable">
+            <summary>
+            Use the attribute "VariableTargetVariable" to point to that variable
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariableDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMaker.Ecosystem.Utils.PlayMakerFsmVariableTargetDrawer.rowCount">
+            <summary>
+            The row count. Computed and set by inheriting class
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.NameSpace">
+            <summary>
+            The name space.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.Name">
+            <summary>
+            The name.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.FolderPath">
+            <summary>
+            The folder path.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.entries">
+            <summary>
+            The enum entries.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.filePath">
+            <summary>
+            The full filePath of this definition.
+            deduced property or injected property 
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.EnumLiteralPreview">
+            <summary>
+            The Enum literal. it's only use for preview
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition.ScriptLiteral">
+            <summary>
+            The script literal.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.CreateEnum(HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreator.EnumDefinition)">
+            <summary>
+            Create a new script featuring the new enum.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumCreatorWizard.currentEnumFileDetails">
+            <summary>
+            The current enum file details.
+            If this is not null, it means we are editing an existing enum
+            </summary>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumFileDetails.enumName">
+            <summary>
+            Gets the name of the enum.
+            </summary>
+            <value>The name of the enum.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumFileDetails.nameSpace">
+            <summary>
+            Gets or sets the namespace.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumFileDetails.filePath">
+            <summary>
+            Gets the filePath.
+            </summary>
+            <value>The filepath of the enum.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumFileDetails.projectPath">
+            <summary>
+            Gets the relative path from the project's assets folder.
+            </summary>
+            <value>The relative path of the enum.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EnumFileDetails.updateTime">
+            <summary>
+            Gets the update time.
+            </summary>
+            <value>The update time.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.className">
+            <summary>
+            Gets the name of the class.
+            </summary>
+            <value>The name of the class.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.nameSpace">
+            <summary>
+            Gets or sets the namespace.
+            </summary>
+            <value>The name space.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.methodName">
+            <summary>
+            Gets or sets the method Name.
+            </summary>
+            <value>The method Name</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.methodParamType">
+            <summary>
+            Gets the method Type.
+            </summary>
+            <value>The method parameter Type</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.fileName">
+            <summary>
+            Gets the name of the file.
+            </summary>
+            <value>The name of the file.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.filePath">
+            <summary>
+            Gets the filePath.
+            </summary>
+            <value>The filepath of the enum.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.projectPath">
+            <summary>
+            Gets the relative path from the project's assets folder.
+            </summary>
+            <value>The relative path of the enum.</value>
+        </member>
+        <member name="P:HutongGames.PlayMakerEditor.Ecosystem.Utils.EventProxyFileDetails.updateTime">
+            <summary>
+            Gets the update time.
+            </summary>
+            <value>The update time.</value>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.NameSpace">
+            <summary>
+            The name space.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.Name">
+            <summary>
+            The name.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.FolderPath">
+            <summary>
+            The folder path.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.PublicMethodName">
+            <summary>
+            The public method name.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.Parameter">
+            <summary>
+            The variable type.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.filePath">
+            <summary>
+            The full filePath of this definition.
+            deduced property or injected property 
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.LiteralPreview">
+            <summary>
+            The script literal. It's only use for preview (shorter version, minus comments and all)
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition.ScriptLiteral">
+            <summary>
+            The script literal.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.CreateProxy(HutongGames.PlayMakerEditor.Ecosystem.Utils.PlayMakerEventProxyCreator.PlayMakerEventProxyCreatorDefinition)">
+            <summary>
+            Create a new script featuring the new enum.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.CallMethodEditor">
+            <summary>
+            TODO: 
+            Keep parameters when changing method signature?
+            Copy/paste parameter values?
+            Ability to add custom menu item to Action Settings menu?
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.AssetGUIDs">
+            <summary>
+            Collect Playmaker Asset GUIDs as static strings
+            Used instead of asset paths (user can move files)
+            Also can be used to check for installation problems
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.BaseGuidedTourWindow">
+            <inheritdoc />
+            <summary>
+            Base class for a Guided Tour Window 
+            Uses GuidedTour to organize topics
+            Uses HtmlText for help text with links etc.
+            TODO: Remove some dependencies and move to HutongGames.Editor so we can use in other projects
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.BaseGuidedTourWindow.DoGuidedTourGUI">
+            <summary>
+            Render the guidedTour
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.BaseGuidedTourWindow.GetUrl(HutongGames.PlayMakerEditor.WikiPages)">
+            <summary>
+            Shorter command for convenience (used a lot)
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.DefinesHelper">
+            <summary>
+            Helper class for adding/removing define symbols
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.EditorStartupPrefs">
+            <summary>
+            Stores per project settings.
+            EditorPrefs are universal so not well suited to per project settings.
+            NOTE: This class is included as source and cannot be accessed from dll
+            So it's intended for use by startup and install scripts.
+            </summary>
+        </member>
+        <member name="F:HutongGames.PlayMakerEditor.EditorStartupPrefs.versionInfoPath">
+            <summary>
+            Path to a separate VersionInfo.txt file.
+            This file stores the version of Unity the installer was exported from.
+            We can't use a property for this because ScriptableObjects saved in newer versions of Unity might not load in older versions,
+            then the EditorStartupPrefs is reset and the unity version is lost (e.g. if importing a 2018.3 package in 5.3).
+            So instead we store the info in a plain text file for maximum compatibility.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.EditorStartupPrefs.IsUnityVersionCompatible">
+            <summary>
+            Check if the Unity version is compatible with the version the PlayMaker package was built with.
+            The Unity build version is stored in UnityBuildVersion by ResetForExport().
+            ResetForExport is called by build scripts.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.FsmComponentInspector">
+            <summary>
+            Custom inspector for PlayMakerFSM
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmComponentInspector.OnSceneGUI">
+            <summary>
+            Actions can use OnSceneGUI to display interactive gizmos
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmComponentInspector.OpenInEditor(PlayMakerFSM)">
+            <summary>
+            Open the specified FSM in the Playmaker Editor
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmComponentInspector.OpenInEditor(HutongGames.PlayMaker.Fsm)">
+            <summary>
+            Open the specified FSM in the Playmaker Editor
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmComponentInspector.OpenInEditor(UnityEngine.GameObject)">
+            <summary>
+            Open the first PlayMakerFSM on a GameObject in the Playmaker Editor
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmEditorWindow.OpenWindow">
+            <summary>
+            Open the Fsm Editor and optionally show the Welcome Screen
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmEditorWindow.OpenWindow(PlayMakerFSM)">
+            <summary>
+            Open the Fsm Editor and select an Fsm Component
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmEditorWindow.OpenWindow(FsmTemplate)">
+            <summary>
+            Open the Fsm Editor and select an Fsm Component
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmEditorWindow.IsOpen">
+            <summary>
+            Is the Fsm Editor open?
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.FsmEditorWindow.Initialize">
+            <summary>
+            Delay initialization until first OnGUI to avoid interfering with runtime system initialization.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerAddonManager">
+            <summary>
+            Manages optional add-ons for Playmaker
+            Used by PlayMakerWelcomeWindow
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerAutoUpdater">
+            <summary>
+            Try to fix common update problems automatically
+            Update Tasks:
+            -- Move Playmaker.dll from Assets\PlayMaker to Assets\Plugins\PlayMaker
+            -- Set plugin import settings
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.PlayMakerAutoUpdater.PlaymakerDllsNeedMoving">
+            <summary>
+            Check if PlayMaker.dll is not it Assets/Plugins/PlayMaker
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.PlayMakerAutoUpdater.DuplicatePlaymakerDllExists">
+            <summary>
+            Unity5.0-5.2 could make duplicate files on import.
+            E.g., PlayMaker.dll could be imported as PlayMaker 1.dll
+            This checks for this duplicate dll.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.PlayMakerAutoUpdater.HasOldEditorLanguageResources">
+            <summary>
+            Unity 5+ changed the way language resource dlls were loaded.
+            Resource dlls formatted for Unity 4.x create duplicate resource errors in Unity 5.x
+            So if a user upgrades a Unity 4.x project to Unity 5.x these language resources need to be fixed.
+            Unfortunately the resulting error blocks this auto-update script from running! 
+            Including this anyway, in case this is "fixed" in a future Unity version...
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerDefines">
+            <summary>
+            Adds Playmaker defines to project
+            Other tools can now use #if PLAYMAKER
+            Package as source code so user can remove or modify
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerEditorStartup">
+            <summary>
+            Manages initialization of PlayMaker Editor classes
+            Before Unity 5.4 a lot of this was done in EditorWindow constructors.
+            In Unity 5.4+ this is not allowed and throws an error.
+            Unity API calls are also not allowed in constructors of Serializable classes.
+            So instead we do it all here in a non-Serializable class.
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerGuidedTour">
+            <summary>
+            Guided Tour of the various PlayMaker editor windows and UI.
+            NOTE: You can extend BaseGuidedTourWindow to make your own Guided Tour windows!
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.PlayMakerGuidedTour.Open">
+            <summary>
+            Open as Utility Window
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.DoPreprocessPrefabFSMsInBuild">
+            <summary>
+            Collects all prefabs with FSMs referenced by scenes in the build.
+            Then preprocess all FSMs on those prefabs.
+            TODO: check if this handles:
+            - PlayMakerFSMs referenced in actions
+            - PlayMakerFSMs in Resources folders
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.GetPrefabGameObject(System.String)">
+            <summary>
+            Get the main GameObject for a prefab file.
+            In 2018.3+ loads the prefab so it can be edited.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.GetLoadedScenes">
+            <summary>
+            Get all scenes currently open in the editor
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.GetScenesInBuild">
+            <summary>
+            Get all enabled scenes in Build Settings.
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.LoadScenes(System.Collections.Generic.List{System.String})">
+            <summary>
+            Load multiple scenes in the editor.
+            </summary>
+            <param name="scenes"></param>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.GetAllPrefabFSMsInBuild">
+            <summary>
+            Get all prefab files in build that have PlayMakerFSMs
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.GetLoadedPrefabFSMs(System.Collections.Generic.List{System.String})">
+            <summary>
+            Get loaded prefab files that have PlayMakerFSMs
+            </summary>
+        </member>
+        <member name="M:HutongGames.PlayMakerEditor.ProjectTools.DoPreprocessAllPrefabFSMs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HutongGames.PlayMakerEditor.PlayMakerWelcomeWindow">
+            <summary>
+            Welcome Window with getting started shortcuts
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PlayMakerEditorUtils.CreateAsset``1(System.String)" -->
+        <member name="M:PlayMakerEditorUtils.GetAssetsOfType(System.Type,System.String)">
+            <summary>
+            Used to get assets of a certain type and file extension from entire project
+            </summary>
+            <param name="type">The type to retrieve. eg typeof(GameObject).</param>
+            <param name="fileExtension">The file extention the type uses eg ".prefab".</param>
+            <returns>An Object array of assets.</returns>
+        </member>
+        <member name="M:PlayMakerEditorUtils.MountScriptingDefineSymbolToAllTargets(System.String)">
+            <summary>
+            Mounts the scripting define symbol to all targets. Taken from Hutonggames PlayMakerDefines.cs
+            </summary>
+            <param name="defineSymbol">Define symbol.</param>
+        </member>
+        <member name="M:PlayMakerEditorUtils.UnMountScriptingDefineSymbolToAllTargets(System.String)">
+            <summary>
+            Unmount scripting define symbol to all targets. Taken from Hutonggames PlayMakerDefines.cs
+            </summary>
+            <param name="defineSymbol">Define symbol.</param>
+        </member>
+        <member name="M:PlayMakerEditorUtils.CreateGlobalEventsIfNeeded(System.String[])">
+            <summary>
+            Add if necessary a list of Global events to the PlayMaker Globals resources to be available in the global events list
+            </summary>
+            <param name="events"></param>
+        </member>
+        <member name="M:PlayMakerEditorUtils.CreateGlobalEventIfNeeded(System.String)">
+            <summary>
+            Add if necessary a Global event to the PlayMaker Globals resources to be available in the global events list
+            </summary>
+            <param name="eventName"></param>
+        </member>
+        <member name="T:PlayMakerUtilsDefines">
+            <summary>
+            Adds Playmaker Utils defines to project
+            Other tools can now use #if PLAYMAKER_UTILS or PLAYMAKER_UTILS_X_X_OR_NEWER
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.UnityEditor.Utils">
+            <summary>
+            Utility class for Editors from Net.FabreJean namespace
+            </summary> 
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.Utils._GetAssemblyInformationalVersion_Method">
+            <summary>
+            caching the reflected method to Get the PlayMaker version, jsut to avoid doing the work everytime.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.Utils.GetPlayMakerVersion">
+            <summary>
+            Gets the playMaker version via reflection so that no errors is fired if PlayMaker is not installed
+            </summary>
+            <returns>The play maker version.</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.Utils.isPlayMakerInstalled">
+            <summary>
+            Check if PlayMaker is installed. Doesn't throw exceptions if PlayMaker is not installed.
+            </summary>
+            <returns><c>true</c>, if play maker installed was ised, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.Utils.DoesFileExistsAssets(System.String)">
+            <summary>
+            Check if an file exists in the Assets folder of the current Project. 
+            </summary>
+            <returns><c>true</c>, if file found, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.Utils.MountScriptingDefineSymbolToAllTargets(System.String)">
+            <summary>
+            Mounts the scripting define symbol to all targets. Taken from Hutonggames PlayMaker PlayMakerDefines.cs
+            </summary>
+            <param name="defineSymbol">Define symbol.</param>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.Utils.UnMountScriptingDefineSymbolToAllTargets(System.String)">
+            <summary>
+            Unmount scripting define symbol to all targets. Taken from Hutonggames PlayMaker PlayMakerDefines.cs
+            </summary>
+            <param name="defineSymbol">Define symbol.</param>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.VersionInfo.Clone">
+            <summary>
+            I haven't digged into this but if I assign a struct from a variable to another does that create a shallow copy or it remains the same in memory?
+            like myversion == someother version ? what happens there? 
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.VersionInfo.ToString">
+            <summary>
+            VersionInfo string : x.x.x t x x
+            </summary>
+            <returns>The VersionInfo as string</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.VersionInfo.ToShortString">
+            <summary>
+             Short string: x.x.xtx x
+            </summary>
+            <returns>The short string.</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.VersionInfo.ToString(System.String)">
+            <summary>
+            Custom format if wanted. {0} is Major, {1} is Minor, {2} is Patch, {3} is short Type, {4} is long type, 5 is Build, 6 is appendix
+            </summary>
+            <returns>The string.</returns>
+            <param name="format">Format. default to "{0}.{1}.{2}{3}{5}"</param>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.get(System.Char)">
+            <summary>
+            Gets the escape code for a single character
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.getInverse(System.String)">
+            <summary>
+            Gets the character that a hash refers to
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.BackslashEscapes(System.String)">
+            <summary>
+            Encodes any escaped characters such as \`, \*, \[ etc
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.BoldItalic(System.String)">
+            <summary>
+            Encodes Bold [ * ] and Italic [ _ ] characters
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.Escape(System.String,System.String)">
+            <summary>
+            Encodes all chars of the second parameter.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.ProblemUrlChars(System.String)">
+            <summary>
+            encodes problem characters in URLs, such as 
+            * _  and optionally ' () []  :
+            this is to avoid problems with markup later
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.Escapes.Unescape(System.String)">
+            <summary>
+            swap back in all the special characters we've hidden
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI">
+            <summary>
+            Markdown GUI.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.__guiSkinName__">
+            <summary>
+            The name of the GUI skin.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI._markdownSkin">
+            <summary>
+            The markdown skin.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI._markdownParser">
+            <summary>
+            The markdown parser.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI._processedText">
+            <summary>
+            The processed text ready to be injecting in a RichText enabled GUI element
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI._isMouseDown">
+            <summary>
+            Flag to pass the mouse down state over to the check routine for hypertext clicks
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.HasContent">
+            <summary>
+            flag to know if this instance has content to show.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI"/> class.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.UserGuiSkin(UnityEngine.GUISkin)">
+            <summary>
+            Let the user define the skin to use. If not overriden in OnGUILayout_MardkDownTextArea, it will expect 
+            MarkdownTextAreaDark and MarkdownTextAreaLight styles definition.
+            </summary>
+            <param name="skin">Skin.</param>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.UserSkin">
+            <summary>
+            The user defined skin.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.ProcessSource(System.String)">
+            <summary>
+            Processes markdown syntax from a source 
+            </summary>
+            <returns>The processed source as Unity rich text</returns>
+            <param name="source">Source text featuring markdown syntax</param>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownGUI.OnGUILayout_MardkDownTextArea(System.String)">
+            <summary>
+            Display a Text Area GUILayout element with the processed source
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.AutoHyperlink">
+            <summary>
+            when true, (most) bare plain URLs are auto-hyperlinked  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.AutoNewlines">
+            <summary>
+            when true, RETURN becomes a literal newline  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.EmptyElementSuffix">
+            <summary>
+            use ">" for HTML output, or " />" for XHTML output
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.EncodeProblemUrlCharacters">
+            <summary>
+            when true, problematic URL characters like [, ], (, and so forth will be encoded 
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.LinkEmails">
+            <summary>
+            when false, email addresses will never be auto-linked  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions.StrictBoldItalic">
+            <summary>
+            when true, bold and italic require non-word characters on either side  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser">
+            <summary>
+            Markdown is a text-to-HTML conversion tool for web writers. 
+            Markdown allows you to write using an easy-to-read, easy-to-write plain text format, 
+            then convert it to structurally valid XHTML (or HTML).
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.#ctor">
+            <summary>
+            Create a new Markdown instance using default options
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.#ctor(System.Boolean)">
+            <summary>
+            Create a new Markdown instance and optionally load options from a configuration
+            file. There they should be stored in the appSettings section, available options are:
+            
+                Markdown.StrictBoldItalic (true/false)
+                Markdown.EmptyElementSuffix (">" or " />" without the quotes)
+                Markdown.LinkEmails (true/false)
+                Markdown.AutoNewLines (true/false)
+                Markdown.AutoHyperlink (true/false)
+                Markdown.EncodeProblemUrlCharacters (true/false) 
+                
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.#ctor(Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownOptions)">
+            <summary>
+            Create a new Markdown instance and set the options from the MarkdownOptions object.
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EmptyElementSuffix">
+            <summary>
+            use ">" for HTML output, or " />" for XHTML output
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.LinkEmails">
+            <summary>
+            when false, email addresses will never be auto-linked  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.StrictBoldItalic">
+            <summary>
+            when true, bold and italic require non-word characters on either side  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.AutoNewLines">
+            <summary>
+            when true, RETURN becomes a literal newline  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.AutoHyperlink">
+            <summary>
+            when true, (most) bare plain URLs are auto-hyperlinked  
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EncodeProblemUrlCharacters">
+            <summary>
+            when true, problematic URL characters like [, ], (, and so forth will be encoded 
+            WARNING: this is a significant deviation from the markdown spec
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser._nestDepth">
+            <summary>
+            maximum nested depth of [] and () supported by the transform; implementation detail
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser._tabWidth">
+            <summary>
+            Tabs are automatically converted to spaces as part of the transform  
+            this constant determines how "wide" those tabs become in spaces  
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.#cctor">
+            <summary>
+            In the static constuctor we'll initialize what stays the same across all transforms.
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.Version">
+            <summary>
+            current version of MarkdownSharp;  
+            see http://code.google.com/p/markdownsharp/ for the latest code or to contribute
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.Transform(System.String,System.Boolean)">
+            <summary>
+            Transforms the provided Markdown-formatted text to HTML;  
+            see http://en.wikipedia.org/wiki/Markdown
+            </summary>
+            <remarks>
+            The order in which other subs are called here is
+            essential. Link and image substitutions need to happen before
+            EscapeSpecialChars(), so that any *'s or _'s in the a
+            and img tags get encoded.
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.RunBlockGamut(System.String)">
+            <summary>
+            Perform transformations that form block-level tags like paragraphs, headers, and list items.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.RunSpanGamut(System.String)">
+            <summary>
+            Perform transformations that occur *within* block-level tags like paragraphs, headers, and list items.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.FormParagraphs(System.String)">
+            <summary>
+            splits on two or more newlines, to form "paragraphs";    
+            each paragraph is then unhashed (if it is a hash) or wrapped in HTML p tag
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.GetNestedBracketsPattern">
+            <summary>
+            Reusable pattern to match balanced [brackets]. See Friedl's 
+            "Mastering Regular Expressions", 2nd Ed., pp. 328-331.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.GetNestedParensPattern">
+            <summary>
+            Reusable pattern to match balanced (parens). See Friedl's 
+            "Mastering Regular Expressions", 2nd Ed., pp. 328-331.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.StripLinkDefinitions(System.String)">
+            <summary>
+            Strips link definitions from text, stores the URLs and titles in hash references.
+            </summary>
+            <remarks>
+            ^[id]: url "optional title"
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.GetBlockPattern">
+            <summary>
+            derived pretty much verbatim from PHP Markdown
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.HashHTMLBlocks(System.String)">
+            <summary>
+            replaces any block-level HTML blocks with hash entries
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.TokenizeHTML(System.String)">
+            <summary>
+            returns an array of HTML tokens comprising the input string. Each token is 
+            either a tag (possibly with nested, tags contained therein, such 
+            as &lt;a href="&lt;MTFoo&gt;"&gt;, or a run of text between tags. Each element of the 
+            array is a two-element array; the first is either 'tag' or 'text'; the second is 
+            the actual value.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoAnchors(System.String)">
+            <summary>
+            Turn Markdown link shortcuts into HTML anchor tags
+            </summary>
+            <remarks>
+            [link text](url "title") 
+            [link text][id] 
+            [id] 
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoImages(System.String)">
+            <summary>
+            Turn Markdown image shortcuts into HTML img tags. 
+            </summary>
+            <remarks>
+            ![alt text][id]
+            ![alt text](url "optional title")
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoHeaders(System.String)">
+            <summary>
+            Turn Markdown headers into HTML header tags
+            </summary>
+            <remarks>
+            Header 1  
+            ========  
+            
+            Header 2  
+            --------  
+            
+            # Header 1  
+            ## Header 2  
+            ## Header 2 with closing hashes ##  
+            ...  
+            ###### Header 6  
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoHorizontalRules(System.String)">
+            <summary>
+            Turn Markdown horizontal rules into HTML hr tags
+            </summary>
+            <remarks>
+            ***  
+            * * *  
+            ---
+            - - -
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoLists(System.String)">
+            <summary>
+            Turn Markdown lists into HTML ul and ol and li tags
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.ProcessListItems(System.String,System.String,System.String)">
+            <summary>
+            Process the contents of a single ordered or unordered list, splitting it
+            into individual list items.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoCodeBlocks(System.String)">
+            <summary>
+            /// Turn Markdown 4-space indented code into HTML pre code blocks
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoCodeSpans(System.String)">
+            <summary>
+            Turn Markdown `code spans` into HTML code tags
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoItalicsAndBold(System.String)">
+            <summary>
+            Turn Markdown *italics* and **bold** into HTML strong and em tags
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoHardBreaks(System.String)">
+            <summary>
+            Turn markdown line breaks (two space at end of line) into HTML break tags
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoBlockQuotes(System.String)">
+            <summary>
+            Turn Markdown > quoted blocks into HTML blockquote blocks
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.DoAutoLinks(System.String)">
+            <summary>
+            Turn angle-delimited URLs into HTML anchor tags
+            </summary>
+            <remarks>
+            &lt;http://www.example.com&gt;
+            </remarks>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.Outdent(System.String)">
+            <summary>
+            Remove one level of line-leading spaces
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EncodeEmailAddress(System.String)">
+            <summary>
+            encodes email address randomly  
+            roughly 10% raw, 45% hex, 45% dec 
+            note that @ is always encoded and : never is
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EncodeCode(System.String)">
+            <summary>
+            Encode/escape certain Markdown characters inside code blocks and spans where they are literals
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EncodeAmpsAndAngles(System.String)">
+            <summary>
+            Encode any ampersands (that aren't part of an HTML entity) and left or right angle brackets
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EscapeBackslashes(System.String)">
+            <summary>
+            Encodes any escaped characters such as \`, \*, \[ etc
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.Unescape(System.String)">
+            <summary>
+            swap back in all the special characters we've hidden
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EscapeBoldItalic(System.String)">
+            <summary>
+            escapes Bold [ * ] and Italic [ _ ] characters
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EncodeProblemUrlChars(System.String)">
+            <summary>
+            hex-encodes some unusual "problem" chars in URLs to avoid URL detection problems 
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.EscapeSpecialCharsWithinTagAttributes(System.String)">
+            <summary>
+            Within tags -- meaning between &lt; and &gt; -- encode [\ ` * _] so they 
+            don't conflict with their use in Markdown for code, italics and strong. 
+            We're replacing each such character with its corresponding hash 
+            value; this is likely overkill, but it should prevent us from colliding 
+            with the escape values by accident.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.Normalize(System.String)">
+            <summary>
+            convert all tabs to _tabWidth spaces; 
+            standardizes line endings from DOS (CR LF) or Mac (CR) to UNIX (LF); 
+            makes sure text ends with a couple of newlines; 
+            removes any blank lines (only spaces) in the text
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.MarkdownSharp.MarkdownParser.RepeatString(System.String,System.Int32)">
+            <summary>
+            this is to emulate what's evailable in PHP
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.UnityEditor.ObjectInspector.isMarkDownFile">
+            <summary>
+            The is mark down file.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.ObjectInspector.OnInspectorGUI">
+            <summary>
+            redirect to draw the parsed marked down file or the default inspector.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.ObjectInspector.OnEnable">
+            <summary>
+            Detect if we deal with an markdown file, because of its extension.
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.UnityEditor.EcosystemUtils">
+            <summary>
+            Ecosystem utils. Set of common methods and tools.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Net.FabreJean.UnityEditor.EcosystemUtils.ParseUrlQueryParameters(System.String)" -->
+        <member name="M:Net.FabreJean.UnityEditor.EcosystemUtils.ExtractEcoMetaDataFromText(System.String)">
+            <summary>
+            Extracts the meta data from text. expect a json content encapsulated between EcoMetaStart and EcoMetaEnd
+            </summary>
+            <returns>The meta data from text.</returns>
+            <param name="text">Text.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Net.FabreJean.UnityEditor.EcosystemUtils.CreateAsset``1(System.String)" -->
+        <member name="T:Net.FabreJean.UnityEditor.JSON">
+            <summary>
+            This class encodes and decodes JSON strings.
+            Spec. details, see http://www.json.org/
+            
+            JSON uses Arrays and Objects. These correspond here to the datatypes ArrayList and Hashtable.
+            All numbers are parsed to floats or ints.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.JSON.JsonDecode(System.Byte[])">
+            <summary>
+            Parses the string json into a value
+            </summary>
+            <param name="json">A JSON byte array.</param>
+            <returns>An ArrayList, a Hashtable, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.JSON.JsonDecode(System.String)">
+            <summary>
+            Parses the string json into a value
+            </summary>
+            <param name="json">A JSON string.</param>
+            <returns>An ArrayList, a Hashtable, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.JSON.JsonDecode(System.String,System.Boolean@)">
+            <summary>
+            Parses the string json into a value; and fills 'success' with the successfullness of the parse.
+            </summary>
+            <param name="json">A JSON string.</param>
+            <param name="success">Successful parse?</param>
+            <returns>An ArrayList, a Hashtable, a double, a string, null, true, or false</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.JSON.JsonEncode(System.Object)">
+            <summary>
+            Converts a Hashtable / ArrayList object into a JSON string
+            </summary>
+            <param name="json">A Hashtable / ArrayList</param>
+            <returns>A JSON encoded string, or null if object 'json' is not serializable</returns>
+        </member>
+        <member name="M:Net.FabreJean.UnityEditor.JSON.IsNumeric(System.Object)">
+            <summary>
+            Determines if a given object is numeric in any way
+            (can be integer, double, null, etc). 
+            
+            Thanks to mtighe for pointing out Double.TryParse to me.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.Item.ProcessMetaData">
+            <summary>
+            Go over the metaData if exists and extract informations for direct access. Will reset related properties
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.Item.GetUrl(Net.FabreJean.PlayMaker.Ecosystem.Item.urltypes,System.Object[])">
+            <summary>
+            Return a url for this item within a specific context, github, rest.
+            </summary>
+            <returns>The URL</returns>
+            <param name="urlType">URL type.</param>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.Item.LoadMetaData">
+            <summary>
+            Loads the meta data. output will be in json within the item raw data or the metadata property.
+            Process is Asynchrone
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.Item.LoadDocumentationImage">
+            <summary>
+            Loads the documentation image. Output will be saved in DocumentationImage_Cache
+            Process is Asynchrone
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.ECO_BrowserVersion">
+            <summary>
+            The live version, to compare to the local version, and prompt for updates if necessary
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.PlayMakerEcosystemFilters">
+            <summary>
+            The live version package, this is the update to get if version is newer.
+            </summary>
+        </member>
+        <member name="P:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.IsDebugOn">
+            <summary>
+            Check if the user has turned on Debugging
+            </summary>
+            <returns><c>true</c> if debug is on; otherwise, <c>false</c>.</returns>
+            <param name="">.</param>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.OnGUI_scannerItemList">
+            <summary>
+            Draw the GUI List of scanned items from ProjectScanner
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.OnGUI_ItemList">
+            <summary>
+            Draw the GUI List of Items found from the search
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.OnEnable">
+            <summary>
+            Called by the system. It's a way to check as well that Unity recompiled
+            We check if the raw search result is not empty and we rebuild the results in that case, 
+            This is for consistency during unity recompilation, and to avoid having to serialize items.
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.ParseSearchResult(System.String)">
+            <summary>
+            Parses the search result from the server. The search is in json completly.
+            </summary>
+            <param name="jsonString">Json string.</param>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.Preview(Net.FabreJean.PlayMaker.Ecosystem.Item)">
+            <summary>
+            Open the browser to view an item source online
+            </summary>
+            <param name="item">Item.</param>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.PostPonBrowserUpdate">
+            <summary>
+            Stop showing Update banner until a newer version is available, and switch to a menu based access to the update to be used at the discretion of the end user
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.Debug_on_prefKey">
+            <summary>
+            The pref key for the debug flag.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.DiscreteTooBar_on_prefKey">
+            <summary>
+            The pref key for the Discrete Toolbar option.
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.LastUpdateBannerVersion_prefKey">
+            <summary>
+            The last update banner version pref key. We can compare this against the latest live version and prompt again if higher
+            used for the update banner: If it is less then the live version, we show the banner
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.LastUpdateBannerVersion">
+            <summary>
+            The last update banner version. If this version is lower then the one found in the result, we show the banner again
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.UpdateBanner_on_prefKey">
+            <summary>
+            remember the choice of the user not to show the update banner. 
+            This will be kept until a newer version will be found then the one at the time of the decision
+            </summary>
+        </member>
+        <member name="F:Net.FabreJean.PlayMaker.Ecosystem.EcosystemBrowser.UpdateBanner_on">
+            <summary>
+            Cached flag to avoid compare versions when drawing the UI, we only check when parsing results
+            </summary>
+        </member>
+        <member name="M:Net.FabreJean.PlayMaker.Ecosystem.ProjectScanner.LaunchScanningProcess(System.Boolean,System.String)">
+            <summary>
+            Launch the scanning process.
+            </summary>
+        </member>
+        <member name="T:Net.FabreJean.PlayMaker.Ecosystem.AssetItem">
+            <summary>
+            ProjectScanner Asset item.
+            </summary>
+        </member>
+    </members>
+</doc>

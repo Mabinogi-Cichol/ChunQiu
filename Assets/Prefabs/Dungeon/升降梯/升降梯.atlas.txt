@@ -1,0 +1,41 @@
+
+升降梯.png
+size: 2421,338
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chain
+  rotate: true
+  xy: 2, 305
+  size: 31, 2417
+  orig: 31, 2417
+  offset: 0, 0
+  index: -1
+ground
+  rotate: true
+  xy: 2, 2
+  size: 301, 364
+  orig: 301, 364
+  offset: 0, 0
+  index: -1
+line
+  rotate: false
+  xy: 368, 250
+  size: 515, 17
+  orig: 515, 17
+  offset: 0, 0
+  index: -1
+round
+  rotate: false
+  xy: 368, 135
+  size: 118, 113
+  orig: 120, 115
+  offset: 1, 1
+  index: -1
+top
+  rotate: false
+  xy: 368, 269
+  size: 575, 34
+  orig: 577, 36
+  offset: 1, 1
+  index: -1

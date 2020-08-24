@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tree Shader Lit 2
+  m_Shader: {fileID: -6465566751694194690, guid: 2e27be68f7c96ba41a017889a9529ff9,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_7FC1D638:
+        m_Texture: {fileID: 2800000, guid: beb36108305dbd241b0ebb00658abcce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: beb36108305dbd241b0ebb00658abcce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_B3B66563_Out_0:
+        m_Texture: {fileID: 2800000, guid: beb36108305dbd241b0ebb00658abcce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_16025B86: 1
+    - Vector1_3698386B: 0.3
+    - Vector1_4B5EDF3: 0.1
+    - Vector1_578BD828: 19.77
+    - Vector1_6336FD83: 6
+    - Vector1_702071A: 2
+    - Vector1_8FB34F7E: 0.1
+    - Vector1_C4263E4E: 0.2
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - Vector2_C12EE74E: {r: 4, g: 0, b: 0, a: 0}
+    - Vector2_F8201DBB: {r: 4, g: -0.2, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

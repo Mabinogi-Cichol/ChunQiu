@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 989f7808dd4c7b548ac66f6d0b36e84c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4413921881614056615
+    second: yewai_0
+  - first:
+      213: 663896784582017210
+    second: yewai_1
+  - first:
+      213: 164096527059956455
+    second: yewai_2
+  - first:
+      213: 1720138200076824028
+    second: yewai_3
+  - first:
+      213: -7528191450245717818
+    second: yewai_4
+  - first:
+      213: 4961445482760553480
+    second: yewai_5
+  - first:
+      213: 525894107455632231
+    second: yewai_6
+  - first:
+      213: 2647418172861066524
+    second: yewai_7
+  - first:
+      213: 8397108277346917126
+    second: yewai_8
+  - first:
+      213: 234898968350910683
+    second: yewai_9
+  - first:
+      213: 9091906341790445516
+    second: yewai_10
+  - first:
+      213: -8625989291187688873
+    second: yewai_11
+  - first:
+      213: -8820543500169157406
+    second: yewai_12
+  - first:
+      213: 1056201974171217266
+    second: yewai_13
+  - first:
+      213: -4912003372730527048
+    second: yewai_14
+  - first:
+      213: 2637184540625754855
+    second: yewai_15
+  - first:
+      213: 2576180110587058655
+    second: yewai_16
+  - first:
+      213: -6845478341643247378
+    second: yewai_17
+  - first:
+      213: 216239782620457872
+    second: yewai_18
+  - first:
+      213: 6029996041260488278
+    second: yewai_19
+  - first:
+      213: -6327860352925948151
+    second: yewai_20
+  - first:
+      213: -3828789181480560368
+    second: yewai_21
+  - first:
+      213: 8849154231262344532
+    second: yewai_22
+  - first:
+      213: 5640228246272004970
+    second: yewai_23
+  - first:
+      213: 3319116086318613241
+    second: yewai_24
+  - first:
+      213: -5936489102037724781
+    second: yewai_25
+  - first:
+      213: 2683117006688414732
+    second: yewai_26
+  - first:
+      213: 8313993482029805994
+    second: yewai_27
+  - first:
+      213: 2180117170115020378
+    second: yewai_28
+  - first:
+      213: -2000836298507514011
+    second: yewai_29
+  - first:
+      213: -4954348439619920646
+    second: yewai_30
+  - first:
+      213: -7492953831652014437
+    second: yewai_31
+  - first:
+      213: -8094867845710311844
+    second: yewai_32
+  - first:
+      213: -7430299205890505998
+    second: yewai_33
+  - first:
+      213: 2510490980236797016
+    second: yewai_34
+  - first:
+      213: 2381604906965974176
+    second: yewai_35
+  - first:
+      213: 580867544235519782
+    second: yewai_36
+  - first:
+      213: -5459600629486528502
+    second: yewai_37
+  - first:
+      213: -4377103780511963942
+    second: yewai_38
+  - first:
+      213: 5426898427421463821
+    second: yewai_39
+  - first:
+      213: -2055869187833187057
+    second: yewai_40
+  - first:
+      213: 8748800800174348879
+    second: yewai_41
+  - first:
+      213: -4807633508890881790
+    second: yewai_42
+  - first:
+      213: -8510626231294137925
+    second: yewai_43
+  - first:
+      213: 4977190217056542457
+    second: yewai_44
+  - first:
+      213: 131902203961260415
+    second: yewai_45
+  - first:
+      213: -8118782034581191958
+    second: yewai_46
+  - first:
+      213: -5501033992367268760
+    second: yewai_47
+  - first:
+      213: -2058461181007350454
+    second: yewai_48
+  - first:
+      213: 80925525199491803
+    second: yewai_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yewai_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 42}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 43}
+        - {x: 39, y: 44}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324a3e8268cad4249a3f8aef5792b78d
+      internalID: 663896784582017210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 43}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 43}
+        - {x: 54, y: 43}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80dc7c14ac2a134a9d35cc1e518aca6
+      internalID: 164096527059956455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -44, y: 43}
+        - {x: -60, y: 43}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 44}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a21a5682d8cf664ab3824471bda67ca
+      internalID: 1720138200076824028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 44}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 45}
+        - {x: 45, y: 45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384bf6907a2550746a0e2eccebc9ddef
+      internalID: -7528191450245717818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 45}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 46}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63636230b43169428a8551baf86a15e
+      internalID: 4961445482760553480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 45}
+        - {x: -60, y: -60}
+        - {x: 46, y: -60}
+        - {x: 44, y: 43}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a14b368bf382ea4a9d24ace3ae2fd98
+      internalID: 525894107455632231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d676cd03c6aa934fa0ca65b72525727
+      internalID: 2647418172861066524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3866d88e368186409a8758a89fbb24a
+      internalID: 8397108277346917126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 60}
+        - {x: -60, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7832b6d94cd430b4da0b4752c18fd31f
+      internalID: 234898968350910683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dfcd9e25b59f94085508f03ce2cd45
+      internalID: 9091906341790445516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda158bcfbe99614aaa15224f19738cd
+      internalID: -8625989291187688873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567375b36dc9c52439352a9175eea8fa
+      internalID: -8820543500169157406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 47, y: 60}
+        - {x: -60, y: 60}
+        - {x: -60, y: -60}
+        - {x: 46, y: -60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a33b5447ccb1149beae9024572a27a
+      internalID: 1056201974171217266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e479b28d6b39406408986db548bf0dde
+      internalID: -4912003372730527048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619da22d4601624448dde86bab1eed70
+      internalID: 2637184540625754855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e1b9551ff226249a8ead023d65cc01
+      internalID: 2576180110587058655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c625095bd1492418eb5500439ef289
+      internalID: -6845478341643247378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783cfbf65e19c54439f3c59fd80f1c19
+      internalID: 216239782620457872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -51, y: 38}
+        - {x: -51, y: -60}
+        - {x: 51, y: -60}
+        - {x: 51, y: 38}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893812f62c239794792675ec772e4b5b
+      internalID: 6029996041260488278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_20
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 60}
+        - {x: -60, y: -60}
+        - {x: 45, y: -60}
+        - {x: 45, y: 60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ca69a1184429144aa292de72cca2b2
+      internalID: -6327860352925948151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e16d0bf329150d4fa2710311468f470
+      internalID: -3828789181480560368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8f4cebd818f8f45a1aa8faaac86209
+      internalID: 8849154231262344532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ad5e2152fa1b7419a7adb6d1d3de23
+      internalID: 5640228246272004970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_24
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3ec305bd1660e4793c38ba0f8b2ab0
+      internalID: 3319116086318613241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 45}
+        - {x: -60, y: -60}
+        - {x: 49, y: -60}
+        - {x: 49, y: 39}
+        - {x: 45, y: 45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa139aed3a031e49aed9002b84618b6
+      internalID: -5936489102037724781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -49, y: 60}
+        - {x: -49, y: -60}
+        - {x: 49, y: -60}
+        - {x: 49, y: 60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5388ca51c50d64e9781de150173ee0
+      internalID: 2683117006688414732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 46, y: 60}
+        - {x: -60, y: 60}
+        - {x: -60, y: -60}
+        - {x: 47, y: -60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0b6b5341110b64a8110195ac6c51d0
+      internalID: 8313993482029805994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2a5d1698dbde243894697e2451cc98
+      internalID: 2180117170115020378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd3f2bd0be40a47985a607f1f997cf
+      internalID: -2000836298507514011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74a9999c92926b4787688a84d09c539
+      internalID: -4954348439619920646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_31
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c16016302adfd489f6d3ffa327cf44
+      internalID: -7492953831652014437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19be104f3bc4ecb439e835ca8bf4e38f
+      internalID: -8094867845710311844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -48, y: 60}
+        - {x: -49, y: -53}
+        - {x: 49, y: -52}
+        - {x: 49, y: 60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097414d95c1eaf94db8a565302d87834
+      internalID: -7430299205890505998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_34
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 45, y: 60}
+        - {x: -60, y: 60}
+        - {x: -60, y: -60}
+        - {x: 44, y: -60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24504005a1d7a2741a426741d048f84d
+      internalID: 2510490980236797016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0837d1d5fa3c1944692eb050aa5df6d0
+      internalID: 2381604906965974176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_36
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12214f3f96d012748aa5ae0e7cc92761
+      internalID: 580867544235519782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_37
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4ac83a764ac584d91053dd774952b4
+      internalID: -5459600629486528502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_38
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4026aa8b682c45489a04c8cf5f0ca59
+      internalID: -4377103780511963942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4891ccfcaba8af54097c4218519e5d63
+      internalID: 5426898427421463821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_40
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd475b87ddd36144b830a98e7971557
+      internalID: -2055869187833187057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_41
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -60, y: 60}
+        - {x: -60, y: -47}
+        - {x: 48, y: -47}
+        - {x: 49, y: 60}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9a3c34d0ec7ca4d9d4f0863f2e4b8b
+      internalID: 8748800800174348879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1631d9d38162c94b812833bc2d97e3a
+      internalID: -4807633508890881790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_43
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1920
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac9b12fe3432884b8baee5f7f2f6b1a
+      internalID: -8510626231294137925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1920
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8097eb04a4639f459a25f189e969605
+      internalID: 4977190217056542457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce98c0733356dd94a8c5f86dc6106cc9
+      internalID: 131902203961260415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 360
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995decf106c24643b69600e8e598131
+      internalID: -8118782034581191958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_47
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1680
+        width: 360
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c41c5a5cb1b824e8f3257e62dbc89e
+      internalID: -5501033992367268760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af123171a8bcbba4da7661807db1bb07
+      internalID: -2058461181007350454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_49
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1320
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d307d7b7a76ab4abaeeb5d1827be2e
+      internalID: 80925525199491803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yewai_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -40, y: 43}
+        - {x: -47, y: 36}
+        - {x: -46, y: -60}
+        - {x: 60, y: -60}
+        - {x: 60, y: 42}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95302144f699eb2c0800000000000000
+      internalID: -4413921881614056615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

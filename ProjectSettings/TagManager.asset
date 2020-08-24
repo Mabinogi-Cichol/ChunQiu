@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - EqualIcon
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - 
+  - Post processing
+  - Room
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 82347099
+    locked: 0
+  - name: Centerground
+    uniqueID: 470693975
+    locked: 0
+  - name: Frontground
+    uniqueID: 4288795839
+    locked: 0
+  - name: Build
+    uniqueID: 3280099511
+    locked: 0
+  - name: Ground
+    uniqueID: 1890121559
+    locked: 0
+  - name: Player
+    uniqueID: 752177695
+    locked: 0
+  - name: Foreground
+    uniqueID: 2411856763
+    locked: 0

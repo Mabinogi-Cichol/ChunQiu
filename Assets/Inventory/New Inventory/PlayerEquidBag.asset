@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76215ea418278142a611752d2c14413, type: 3}
+  m_Name: PlayerEquidBag
+  m_EditorClassIdentifier: 
+  Cloth: {fileID: 11400000, guid: 3d4935dea6d91914d9f3efd9d7b31c9b, type: 2}
+  Main_Weapon1: {fileID: 11400000, guid: 914c296f16419ad48a0aa4afa2bb294b, type: 2}
+  Sub_Weapon1: {fileID: 11400000, guid: 51db148843d5e8c489eb9115bc8b8694, type: 2}
+  Main_Weapon2: {fileID: 11400000, guid: 914c296f16419ad48a0aa4afa2bb294b, type: 2}
+  Sub_Weapon2: {fileID: 0}

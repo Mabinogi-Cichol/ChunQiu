@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: beb36108305dbd241b0ebb00658abcce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2908816704775243407
+    second: bujian_0
+  - first:
+      213: 7717828461507990168
+    second: bujian_1
+  - first:
+      213: 15045008495104621
+    second: bujian_2
+  - first:
+      213: 3540162445507619442
+    second: bujian_3
+  - first:
+      213: 8849817125233397458
+    second: bujian_4
+  - first:
+      213: -5902628184488601518
+    second: bujian_5
+  - first:
+      213: 270894828101596318
+    second: bujian_6
+  - first:
+      213: -2486683142883981884
+    second: bujian_7
+  - first:
+      213: -4849137168489001982
+    second: bujian_8
+  - first:
+      213: -8759676473658940646
+    second: bujian_9
+  - first:
+      213: 3059430683408870174
+    second: bujian_10
+  - first:
+      213: -583845598095727038
+    second: bujian_11
+  - first:
+      213: -837946092644969433
+    second: bujian_12
+  - first:
+      213: -4774754138552657072
+    second: bujian_13
+  - first:
+      213: -7796314248353428516
+    second: bujian_14
+  - first:
+      213: 6419730285974026983
+    second: bujian_15
+  - first:
+      213: 1993474932367627934
+    second: bujian_16
+  - first:
+      213: -2333322534918395167
+    second: bujian_17
+  - first:
+      213: -2536429579649663322
+    second: bujian_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bujian_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2523
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64f5710caaabc84ba439f35991efeba
+      internalID: 2908816704775243407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2523
+        width: 218
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f58aa9a801c124e8fc267991673f9a
+      internalID: 7717828461507990168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 2523
+        width: 248
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c233affd5ee2d7b418bd69f1e3da89e1
+      internalID: 15045008495104621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_3
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 2523
+        width: 152
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0444c8151ebcb99478d7dcbbb9f03321
+      internalID: 3540162445507619442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_4
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 2523
+        width: 134
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9b0e092e806a04386889f81b269425
+      internalID: 8849817125233397458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_5
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 2523
+        width: 219
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b23b7fd3ddf2cb409c9c327f9b94623
+      internalID: -5902628184488601518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_6
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 2533
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6c1eeeda734b742b49e5f7e04fd5f2
+      internalID: 270894828101596318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_7
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2528
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaeb387a079fd14e94157e4800ad41a
+      internalID: -2486683142883981884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_8
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2529
+        width: 80
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d59714bb338cf4f9df1ea7fc0c2062
+      internalID: -4849137168489001982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_9
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 2529
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0680b7d3b7c4bb64db2ed953c35fea40
+      internalID: -8759676473658940646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_10
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 2529
+        width: 92
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88f2f7f04a3c1947a0a8a9f29c576d7
+      internalID: 3059430683408870174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_11
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2529
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85772b708a84ca94dae307655b4eb6b4
+      internalID: -583845598095727038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_12
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2523
+        width: 303
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a69d4a48672534f9d8a13c4badc4bb
+      internalID: -837946092644969433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1521
+        width: 517
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e4d68d0db2dcb42901b33ef0992551
+      internalID: -4774754138552657072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_14
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1521
+        width: 461
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876a5e72426565e4d8c04d7fbeed597d
+      internalID: -7796314248353428516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_15
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 1502
+        width: 1555
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81af6720d8a296489598b846c042792
+      internalID: 6419730285974026983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_16
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 235
+        width: 1161
+        height: 1115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e68808888cd6947ad937e01da508d4
+      internalID: 1993474932367627934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_17
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 238
+        width: 707
+        height: 1108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413410868998eb14dbb602ab931e748f
+      internalID: -2333322534918395167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bujian_18
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 300
+        width: 992
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd94ae9c1c9796429c4a819f313a35b
+      internalID: -2536429579649663322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
