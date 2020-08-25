@@ -4,6 +4,7 @@
 ![截图](https://github.com/Mabinogi-Cichol/ChunQiu/blob/master/README/Readme_image.png)  
 コントロール：Keyboard＆GamePad  
 
+Unityバージョン：2019.4  
 Keyboard：  
 移動：WASD  
 回避：Shift  
